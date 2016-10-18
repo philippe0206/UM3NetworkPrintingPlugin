@@ -121,7 +121,7 @@ class NetworkPrinterOutputDevice(PrinterOutputDevice):
         self._update_timer.timeout.connect(self._update)
 
         self._camera_timer = QTimer()
-        self._camera_timer.setInterval(2000)  # Todo: Add preference for camera update interval
+        self._camera_timer.setInterval(500)  # Todo: Add preference for camera update interval
         self._camera_timer.setSingleShot(False)
         self._camera_timer.timeout.connect(self._update_camera)
 
